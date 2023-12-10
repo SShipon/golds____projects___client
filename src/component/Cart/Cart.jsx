@@ -24,7 +24,7 @@ const Cart = () => {
   // ---------------fetch cart item ----------------  //
   const { user } = useContext(AuthContext);
   useEffect(() => {
-    fetch(`http://localhost:5000/booking?email=${user?.email}`)
+    fetch(`http://localhost:8000/booking?email=${user?.email}`)
       .then((res) => res.json())
       // .then((data) => setCartItems(data));
       .then((data) => {
@@ -40,7 +40,7 @@ const Cart = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm('are you sure ?');
     if (proceed) {
-      const url = `http://localhost:5000/cartItem/${id}`;
+      const url = `http://localhost:8000/cartItem/${id}`;
       fetch(url, {
         method: 'DELETE',
       })

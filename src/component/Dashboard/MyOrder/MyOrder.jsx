@@ -6,7 +6,7 @@ const MyOrder = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useContext(AuthContext);
   useEffect(() => {
-    fetch(`http://localhost:5000/booking?email=${user.email}`)
+    fetch(`http://localhost:8000/booking?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   });

@@ -86,13 +86,13 @@ export const router = createBrowserRouter([
         path: '/detailPage/:id',
         element: <DetailPage></DetailPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/golds/${params.id}`),
+          fetch(`http://localhost:8000/golds/${params.id}`),
       },
       {
         path: '/detailsPage/:id',
         element: <DetailPage></DetailPage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/diamonds/${params.id}`),
+          fetch(`http://localhost:8000/diamonds/${params.id}`),
       },
     ],
   },

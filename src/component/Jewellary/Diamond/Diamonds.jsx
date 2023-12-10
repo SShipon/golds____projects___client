@@ -5,7 +5,7 @@ import Diamond from "./Diamond";
 const Diamonds = () => {
     const [diamonds, setDiamonds] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:5000/diamonds')
+      fetch('http://localhost:8000/diamonds')
         .then((res) => res.json())
         .then((data) => setDiamonds(data));
     }, []);

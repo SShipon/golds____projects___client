@@ -28,7 +28,7 @@ const DetailPage = () => {
       image: allGoldsData.image,
       quantity:allGoldsData.quantity
     };
-    fetch('http://localhost:5000/booking', {
+    fetch('http://localhost:8000/booking', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

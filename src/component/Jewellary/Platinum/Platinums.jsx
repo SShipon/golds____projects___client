@@ -5,7 +5,7 @@ import Platinum from './Platinum';
 const Platinums = () => {
      const [platinums, setPlatinums] = useState([]);
      useEffect(() => {
-       fetch('http://localhost:5000/platinums')
+       fetch('http://localhost:8000/platinums')
          .then((res) => res.json())
          .then((data) => setPlatinums(data));
      }, []);

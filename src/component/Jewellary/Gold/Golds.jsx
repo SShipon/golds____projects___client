@@ -11,7 +11,7 @@ const Golds = () => {
  
   const [golds, setGolds] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/golds')
+    fetch('http://localhost:8000/golds')
       .then((res) => res.json())
       .then((data) => setGolds(data));
     

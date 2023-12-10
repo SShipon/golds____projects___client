@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 const Pearl = () => {
    const [pearls, setPearls] = useState([]);
    useEffect(() => {
-     fetch('http://localhost:5000/pearls')
+     fetch('http://localhost:8000/pearls')
        .then((res) => res.json())
        .then((data) => setPearls(data));
    }, []);

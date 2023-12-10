@@ -3,12 +3,13 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyB2nykDnjAJes4qr1Fqjj9-iTDwe8acReE',
-  authDomain: 'golden-town-67c51.firebaseapp.com',
-  projectId: 'golden-town-67c51',
-  storageBucket: 'golden-town-67c51.appspot.com',
-  messagingSenderId: '165423312678',
-  appId: '1:165423312678:web:be758ca7eee25d043ddbe7',
+  apiKey: "AIzaSyCer_qkCucSY2u6Q_eyCbdhP8rYrm1TiBw",
+  authDomain: "golds-1d5ff.firebaseapp.com",
+  projectId: "golds-1d5ff",
+  storageBucket: "golds-1d5ff.appspot.com",
+  messagingSenderId: "556071598013",
+  appId: "1:556071598013:web:1786d0c89b02b4b51284d4",
+  measurementId: "G-FQBZZPYPBC"
 };
 
 // Initialize Firebase
